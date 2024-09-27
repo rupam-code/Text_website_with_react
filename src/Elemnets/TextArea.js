@@ -28,9 +28,9 @@ export default function TextArea(props) {
     <div className='container' my-3 style={{color:props.mode==='dark'?'white':'black'}} >
       <h1>{props.heading}</h1>
       <textarea className="form-control my-3 " rows={8} id="comment" name="text" onChange={handleChange} value={text} style={{backgroundColor :props.mode=='dark'?'#042743':'white', color:props.mode==='dark'?'white':'black'}} />
-      <button className='btn btn-primary mx-2' onClick={conUpper} my-3>Convert to uppercase</button>
-      <button className='btn btn-primary mx-2 ' onClick={conlower} my-3>Convert to  lowercase</button>
-      <button className='btn btn-primary mx-2 ' onClick={clear} my-3>Clear</button>
+      <button className='btn btn-primary mx-2 lower' onClick={conUpper} my-3>Convert to uppercase</button>
+      <button className='btn btn-primary mx-2 lower ' onClick={conlower} my-3>Convert to  lowercase</button>
+      <button className='btn btn-primary mx-2 lower' onClick={clear} my-3>Clear</button>
       
      
     </div>
